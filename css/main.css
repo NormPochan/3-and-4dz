@@ -1,0 +1,190 @@
+.cvet
+{
+	color: red;
+}
+
+.ff
+{
+	left: 86%;
+	position: absolute;
+}
+
+.kk
+{
+	margin-top: 3%;
+}
+
+.loc
+{
+	color: #b8b6ba;
+}
+
+.loc2
+{
+	color: #e8e8e8;
+}
+
+.pp
+{
+	margin-left: 21%;
+}
+
+.rr
+{
+	margin-left: 18%;
+}
+
+.zz
+{
+	margin-left: 29%;
+}
+
+.gg
+{
+	margin-left: 43.5%;
+}
+
+body
+{
+	background-color: #000;
+	overflow-x: hidden;
+}
+
+.pol
+{
+	margin: 5%;
+}
+
+.tmp
+{
+	position: fixed; 
+	z-index: 100;
+	border-radius: 0px;
+	width: 100%;
+}
+
+.navbar-brand 
+{
+  left: 1%;
+  padding-top: 6.5px;
+}
+
+.kol
+{
+  position: absolute;
+}
+
+.BMTH
+{
+	width: 100%;
+	height: 100%;
+}
+
+.media1
+{
+	background-color: #450657;
+	padding-left: 0px;
+	padding-right: 0px;
+	width: 100%;
+}
+
+.media3
+{
+	color: #959296;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: 15%;
+	width: 80%;
+}
+
+.media2
+{
+	background-color: #635866;
+	padding-left: 0px;
+	padding-right: 0px;
+	width: 100%;
+	padding-top: 15px;
+}
+
+.media4
+{
+	background-color: #000;
+	padding-left: 0px;
+	padding-right: 0px;
+	width: 100%;
+	padding-top: 5px;
+}
+
+.flo
+{
+	padding-top: 16px;
+}
+
+.flo2
+{
+	padding-bottom: 16px;
+}
+
+.flo1
+{
+	float: right;
+}
+
+
+.dropdown-submenu
+{
+	position:relative;
+}
+.dropdown-submenu>.dropdown-menu
+{
+	top:0;
+	left:100%;
+	margin-top:-6px;
+	margin-left:-1px;
+	-webkit-border-radius:0 6px 6px 6px;
+	-moz-border-radius:0 6px 6px 6px;
+	border-radius:0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu
+{
+	display:block;
+}
+
+.dropdown-submenu>a:after
+{
+	display:block;
+	content:" ";
+	float:right;
+	width:0;
+	height:0;
+	border-color:transparent;
+	border-style:solid;
+	border-width:5px 0 5px 5px;
+	border-left-color:#cccccc;
+	margin-top:5px;
+	margin-right:-10px;
+}
+.dropdown-submenu:hover>a:after
+{
+	border-left-color:#ffffff;
+}
+.dropdown-submenu.pull-left
+{
+	float:none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu
+{
+	left:-100%;
+	margin-left:10px;
+	-webkit-border-radius:6px 0 6px 6px;
+	-moz-border-radius:6px 0 6px 6px;
+	border-radius:6px 0 6px 6px;
+}
+
+.badge 
+{
+	background-color: gray;
+}
+
+	

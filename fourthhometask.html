@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8"/>
+	<title>JavaScriptByTakhir</title>
+	<script type="text/javascript" href="script 1.js"></script>
+	<meta charset="utf-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		function push()
+		{
+			var f = parseFloat(document.getElementById("f").value);
+			var h = parseFloat(document.getElementById("h").value);
+			var	S = f * h / 2;
+			if(!h)
+			{
+				return alert("Возможно, вы забыли ввести значение высоты или основания или ввели его неправильно!");
+			}
+			if(!f)
+			{
+				return alert("Возможно, вы забыли ввести значение высоты или основания или ввели его неправильно!");
+			}
+			if (h <= 0 )
+			{
+				return alert("Возможно, вы забыли ввести значение высоты или основания или ввели его неправильно!");
+			}
+			if (f <= 0) 
+			{
+				return alert("Возможно, вы забыли ввести значение высоты или основания или ввели его неправильно!");
+			}
+			console.log("Площадь треугольника равна " + S + " кв. ед.");
+			
+			document.getElementById("S").innerHTML = S;
+		}
+		
+		function Fib()
+		{
+			var first = 1;
+			var second = 1;
+			var third = 0;
+			var Obama = "";
+			for (i=12; i>0; i--)
+			{
+				console.log(first);
+				Obama = Obama + first + " ";
+				third = first + second;
+				first = second;
+				second = third;
+			}
+			document.getElementById("Obama").innerHTML = Obama;
+		}
+
+		function getRandomInt(min, max)
+      { 
+        return Math.floor(Math.random() * (max - 1  - min + 1)) + min;
+      }
+
+      function  getArray(n)
+      { 
+        var arr = [];
+        for(i = 0; i < n; i++)
+        {
+          arr[i] = getRandomInt(1, 37);
+        }
+        return arr;
+      }
+
+      function getResultArray(arr) 
+      {
+        for (var i = 0; i < arr.length - 1; i++) 
+        {
+          var z = false;
+          for (var j = 0; j < arr.length - 1 - i; j++) 
+          {
+            if (arr[j] > arr[j + 1]) 
+            {
+              var swap = arr[j];
+              arr[j] = arr[j + 1];
+              arr[j + 1] = swap;
+              z = true;
+            }
+          }
+          if (!z) break;
+        }
+        return arr;
+      }	
+	</script>
+</head>
+<body>
+	<form>
+		<p> Основание треугольника <input type="text" id="f"> </p>
+		<p> Высота <input type="text" id="h"> </p>
+		<p><input type="button" value="Ответ" onClick="push()"></p>
+	</form>
+	<br/>
+	<h2 id="time" class="gg">Ответ = <span id="S"></span></h2>
+	<br/>
+	<form>
+		<p><input type="button" value="Нажми на меня!" onClick="Fib()"></p>
+	</form>
+	<br/>
+	<h2 class="gg">Первые 12 чисел Фибоначчи: <span id="S"></span></h2>
+	<h2 id="Obama" class="gg"><span id="Obama"></span></h2>
+	<script type="text/javascript">
+		var n = 7, m = 5;
+		var arr = [];
+		for (var i = 0; i < m; i++)
+		{
+    		arr[i] = [];
+    		for (var j = 0; j < n; j++)
+    		{
+        		arr[i][j] =  getRandomInt(1, 10);
+			}
+		}		
+		
+		document.write("<table border=\"2\" cellspacing=\"7\" cellpadding=\"2\"align=\"center\"width=\"20%\">")
+            for(i = 0; i < 5; i++)
+            {
+              document.write("<tr>");
+              for(j = 0; j < 7; j++)
+              {
+                document.write("<td align=\"center\"color=\"white\">"  +  arr[i][j] + "</td>");
+                
+              }
+              document.write("</tr>");
+            }
+            document.write("</table>");
+          
+          	
+            for(i = 0; i < 7; i++)
+    		{
+        		for(j = 0; j < 5; j++)
+        		{
+            		for (k = j; k < 5; k++)
+           			{
+                		if (arr[j][i] < arr[k][i])
+                		{
+                    		tmp = arr[j][i];
+                    		arr[j][i] = arr[k][i];
+                   		 	arr[k][i] = tmp;
+                		}
+            		}
+        		}
+    		}
+            
+            document.write("</br>");
+            document.write("<table border=\"2\" cellspacing=\"7\" cellpadding=\"2\"align=\"center\"width=\"20%\">")
+            for(i = 0; i < 5; i++)
+            {
+              document.write("<tr>");
+              for(j = 0; j < 7; j++)
+              {
+                document.write("<td align=\"center\"color=\"white\">" + arr[i][j] + "</td>");
+              }
+              document.write("</tr>");
+            }
+            document.write("</table>")
+            console.log(arr);
+
+            var f = getArray(36);
+            var g = getResultArray(f);
+            var k = 0;
+            var t = 0;
+            var kol = 0;
+            var w = 0;
+            var vol = 0;
+            document.write("<table border=\"2\" cellspacing=\"7\" cellpadding=\"2\"align=\"center\"width=\"20%\">")
+            for(i = 0; i < 6; i++)
+            {
+              document.write("<tr>");
+              for(j = 0; j < 6; j++)
+              {
+                if(i == 0)
+                {
+                  document.write("<td align=\"center\"color=\"white\">" + g[(g.length - 1) - 5 + k] + "</td>");
+                  k++;
+                }
+                if(i % 2 != 0)
+                {
+                  document.write("<td align=\"center\"color=\"white\">" + g[(g.length - 2) - 5 - t - kol] + "</td>");
+                  t++;
+                }
+                if((i % 2 == 0) && (i != 0))
+                {
+                  document.write("<td align=\"center\"color=\"white\">" + g[(g.length / 2) + w - vol] + "</td>");
+                  w++;
+                }
+              }
+              document.write("</tr>");
+              if(i % 2 != 0)
+              {
+              	kol += 12;
+              }
+              if((i % 2 == 0) && (i != 0))
+              {
+              	vol += 12;
+              }
+              w = 0;
+              t = 0;
+            }
+            document.write("</table>")
+            console.log(g);
+	</script>
+</body>
+</html>
